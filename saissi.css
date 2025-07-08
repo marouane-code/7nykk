@@ -1,0 +1,201 @@
+/* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Conteneur principal */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+  padding: 30px 40px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 30px 20px 40px;
+  background: #2a9d8f; /* couleur vert/bleu */
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(42, 157, 143, 0.6);
+  margin-bottom: 40px;
+  user-select: none;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+header img {
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-bottom: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+header p {
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* Sections */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #264653;
+  border-bottom: 3px solid #2a9d8f;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+/* Texte coloré dans les paragraphes */
+section p span {
+  font-weight: 700;
+  color: #2a9d8f;
+}
+
+/* Listes stylées */
+ul {
+  list-style: inside disc;
+  color: #555;
+  font-size: 1.1rem;
+  margin-left: 20px;
+}
+
+ul ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+/* Formulaire */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input[type="email"],
+form input[type="password"],
+form textarea,
+form select {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+  border-color: #2a9d8f;
+  box-shadow: 0 0 8px rgba(42, 157, 143, 0.4);
+}
+
+/* Textarea */
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+  font-family: inherit;
+}
+
+/* Checkbox style */
+form input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+/* Labels */
+form label {
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Submit button */
+form input[type="submit"] {
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 14px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #21867a;
+}
+
+/* Lien contact me */
+section a h3 {
+  text-align: center;
+  color: #2a9d8f;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-weight: 700;
+}
+
+section a h3:hover {
+  color: #1b5e52;
+}
+
+/* Ligne horizontale */
+hr {
+  border: none;
+  border-top: 1.5px solid #ddd;
+  margin: 30px 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  main {
+    padding: 20px 20px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
+  }
+
+  form input[type="submit"] {
+    font-size: 1rem;
+  }
+}
